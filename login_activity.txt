@@ -1,0 +1,12 @@
+2020-11-15T16:57:58.126006600-06:00[America/Chicago] User: test Log in successful
+2021-04-30T12:37:44.511155100-05:00[America/Chicago] User: 1@mail.com Log in Failed
+2021-04-30T12:39:30.457297500-05:00[America/Chicago] User: 1@mail.com Log in Failed
+2021-04-30T12:48:54.485854700-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T12:57:59.229329-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T13:47:17.095918400-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T13:49:41.175544400-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T13:50:43.913855700-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T13:56:44.525918700-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T14:01:28.897240400-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T14:19:18.660110800-05:00[America/Chicago] User: 1@mail.com Log in successful
+2021-04-30T14:20:02.362576-05:00[America/Chicago] User: 1@mail.com Log in successful

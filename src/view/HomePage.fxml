@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="682.0" prefWidth="1335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomePageController">
+  <children>
+    <SplitPane dividerPositions="0.5" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="680.0" prefWidth="338.0">
+        <children>
+                  <Button fx:id="btnCustomerDelete" layoutX="216.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleCustomerDelete" text="Delete Customer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtCustomerName" layoutX="13.0" layoutY="119.0" />
+                  <TextField fx:id="txtAddress" layoutX="196.0" layoutY="119.0" />
+                  <TextField fx:id="txtPostalCode" layoutX="13.0" layoutY="171.0" />
+                  <TextField fx:id="txtPhoneNumber" layoutX="196.0" layoutY="171.0" />
+                  <Button fx:id="btnCustomerUpdate" layoutX="16.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleCustomerUpdate" text="Update Customer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblCustomerName" layoutX="14.0" layoutY="96.0" text="Customer Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAddress" layoutX="197.0" layoutY="96.0" text="Address">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPostalCode" layoutX="15.0" layoutY="150.0" text="Postal Code">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPhoneNumber" layoutX="196.0" layoutY="150.0" text="Phone Number">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCountry" layoutX="15.0" layoutY="207.0" text="Country">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFirstLevelDivision" layoutX="195.0" layoutY="207.0" text="First-Level Division">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbCountry" layoutX="15.0" layoutY="228.0" onAction="#handleCountrySelect" prefWidth="150.0" />
+                  <ComboBox fx:id="cbFirstLevelDivision" layoutX="196.0" layoutY="228.0" prefWidth="150.0" />
+                  <Button fx:id="btnAppointmentUpdate" layoutX="14.0" layoutY="632.0" mnemonicParsing="false" onAction="#handleAppointmentUpdate" text="Update Appointment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAppointmentDelete" layoutX="193.0" layoutY="632.0" mnemonicParsing="false" onAction="#handleAppointmentDelete" text="Delete Appointment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtAppointmentId" layoutX="13.0" layoutY="400.0" />
+                  <TextField fx:id="txtTitle" layoutX="196.0" layoutY="400.0" />
+                  <TextField fx:id="txtStart" layoutX="196.0" layoutY="446.0" />
+                  <ComboBox fx:id="cbContact" layoutX="13.0" layoutY="446.0" prefWidth="150.0" />
+                  <Label fx:id="lblAppointmentId" layoutX="11.0" layoutY="377.0" text="Appointment ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTitle" layoutX="197.0" layoutY="377.0" text="Title">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUserId" layoutX="195.0" layoutY="572.0" text="User ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtLocation" layoutX="197.0" layoutY="540.0" />
+                  <TextArea fx:id="txtDescription" layoutX="14.0" layoutY="543.0" prefHeight="73.0" prefWidth="150.0" />
+                  <Label fx:id="lblDescription" layoutX="12.0" layoutY="519.0" text="Description">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblContact" layoutX="12.0" layoutY="423.0" text="Contact">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtEnd" layoutX="196.0" layoutY="489.0" />
+                  <Label fx:id="lblStart" layoutX="196.0" layoutY="423.0" text="Start">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEnd" layoutX="199.0" layoutY="470.0" text="End">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLocation" layoutX="199.0" layoutY="519.0" text="Location">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserId" layoutX="196.0" layoutY="593.0" />
+                  <TextField fx:id="txtType" layoutX="15.0" layoutY="489.0" />
+                  <Label fx:id="lblType" layoutX="15.0" layoutY="470.0" text="Type">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomerId" layoutX="13.0" layoutY="50.0" text="Customer ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCustomerId" layoutX="15.0" layoutY="71.0" />
+                  <Button layoutX="214.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleReports" text="Generate Reports">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+        </children>
+      </AnchorPane>
+        <AnchorPane prefHeight="885.0" prefWidth="794.0">
+          <children>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="350.0" style="&#10;" text="Customer Appointments" textAlignment="CENTER" wrapText="false">
+                     <font>
+                        <Font size="18.0" fx:id="x3" />
+                     </font>
+                     <textFill>
+                        <Color blue="0.624" green="0.624" red="0.624" fx:id="x4" />
+                     </textFill>
+                  </Label>
+                  <TableView fx:id="tvCustomer" layoutX="16.0" layoutY="43.0" prefHeight="279.0" prefWidth="928.0">
+                    <columns>
+                      <TableColumn fx:id="tcCustomerId" prefWidth="78.0" text="CustomerID" />
+                      <TableColumn fx:id="tcCustomerName" prefWidth="95.99993896484375" text="Name" />
+                        <TableColumn fx:id="tcCustomerAddress" prefWidth="103.0" text="Address" />
+                        <TableColumn fx:id="tcCustomerPostalCode" prefWidth="71.0" text="Postal Code" />
+                        <TableColumn fx:id="tcCustomerPhone" prefWidth="98.0" text="Phone" />
+                        <TableColumn fx:id="tcCustomerCreateDate" prefWidth="105.0" text="Create Date" />
+                        <TableColumn fx:id="tcCustomerCreatedBy" text="Created By" />
+                        <TableColumn fx:id="tcCustomerLastUpdate" prefWidth="131.0" text="Last Update" />
+                        <TableColumn fx:id="tcCustomerLastUpdateBy" prefWidth="100.0" text="Last Updated By" />
+                        <TableColumn fx:id="tcCustomerDivisionId" prefWidth="67.0" text="Division ID" />
+                    </columns>
+                  </TableView>
+          <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" style="&#10;" text="Customers" textAlignment="CENTER" wrapText="false">
+                     <font>
+                <Font size="18.0" fx:id="x1" />
+                     </font>
+                     <textFill>
+                <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
+                     </textFill>
+                  </Label>
+                  <TableView fx:id="tvAppointment" layoutX="16.0" layoutY="380.0" prefHeight="279.0" prefWidth="928.0">
+                    <columns>
+                      <TableColumn fx:id="tcAppointmentId" prefWidth="99.0" text="AppointmentID" />
+                      <TableColumn fx:id="tcAppointmentTitle" prefWidth="66.99996948242188" text="Title" />
+                        <TableColumn fx:id="tcAppointmentDescription" prefWidth="123.0" text="Description" />
+                        <TableColumn fx:id="tcAppointmentLocation" prefWidth="90.0" text="Location" />
+                        <TableColumn fx:id="tcAppointmentContact" prefWidth="87.0" text="Contact" />
+                        <TableColumn fx:id="tcAppointmentType" prefWidth="59.0" text="Type" />
+                        <TableColumn fx:id="tcAppointmentStart" prefWidth="161.0" text="Start Date and Time" />
+                        <TableColumn fx:id="tcAppointmentEnd" prefWidth="168.0" text="End Date and Time" />
+                        <TableColumn fx:id="tcAppointmentCustomerId" minWidth="0.0" prefWidth="73.0" text="CustomerID" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnNewCustomer" layoutX="825.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleNewCustomer" text="New Customer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNewAppointment" layoutX="802.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleNewAppointment" text="New Appointment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <RadioButton fx:id="rbWeek" layoutX="226.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleSortByWeek" text="Weekly" />
+                  <RadioButton fx:id="rbMonth" layoutX="326.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleSortByMonth" text="Monthly" />
+                  <RadioButton fx:id="rbAll" layoutX="428.0" layoutY="355.0" mnemonicParsing="false" onAction="#setAppointmentTableView" text="All" />
+          </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+        </AnchorPane>
+      </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+    </SplitPane>
+  </children>
+</VBox>
